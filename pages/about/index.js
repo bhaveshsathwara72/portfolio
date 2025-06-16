@@ -466,7 +466,7 @@ const About = () => {
       
       <title>About</title>
          <ParticlesContainer />
-        <div className="py-32 text-center xl:text-left relative overflow-auto md:overflow-scroll">
+        <div className="py-32 text-center xl:text-left scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative">
             <Circles />
       <div className="conatiner h-full relative mx-auto flex flex-col  xl:flex-row gap-x-8 xl:text-left">
         {/* text */}

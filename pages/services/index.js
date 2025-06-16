@@ -14,7 +14,7 @@ const Services = () => {
     <main>
       <title>Services</title>
        <ParticlesContainer />
-    <div className=" bg-primaryscrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative">
+    <div className=" bg-primary scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative">
     <div className="h-full relative py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
