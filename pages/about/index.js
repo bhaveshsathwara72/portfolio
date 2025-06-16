@@ -2,59 +2,6 @@ import React, {useState} from "react";
 import ParticlesContainer from '../../components/ParticlesContainer';
 import Image from 'next/image';
 
-// icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-  FaJava,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-  SiAdobeillustrator,
-  SiAdobeindesign,
-  SiAdobeacrobatreader,
-  SiAdobeaftereffects,
-  SiAdobefonts,
-  SiAdobe,
-  SiNodedotjs,
-  SiPython,
-  SiDjango,
-  SiExpress,
-  SiFlutter,
-  SiCanva,
-  SiMysql,
-  SiSqlite,
-  SiLaravel,
-  SiMongodb,
-  SiMongoose,
-  SiOracle,
-  SiPostgresql,
-  SiRedis,
-  SiElasticsearch,
-  SiFacebook,
-  SiWhatsapp,
-  SiInstagram,
-  SiTwitter,
-  SiNetflix,
-  SiAngular,
-  SiBootstrap,
-  SiThreedotjs,
-  SiPhp,
-  SiRuby,
-  SiScala,
-  SiFlask,
-  SiNiconico,
-} from "react-icons/si";
-
-
 // about data
 const aboutData = [
 

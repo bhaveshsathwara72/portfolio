@@ -104,7 +104,14 @@ const galleryImages = project.gallery_urls.split(',');
                       target="_blank"
                       className="flex items-center px-6 py-3 bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
                     >
-                      Visit Website
+                      <Image
+                        src={'/globe.svg'} // fallback if image is missing
+                        width={30}
+                        height={30}
+                        alt="visite"
+                        className="mr-3 brightness-0 invert h-fit color: transparent"
+                      />
+                      <span className='font-semibold text-lg'> Visit Website </span>
                     </Link>
                   )}
                   {project.play_store_link && (
@@ -113,7 +120,14 @@ const galleryImages = project.gallery_urls.split(',');
                       target="_blank"
                       className="flex items-center px-6 py-3 bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
                     >
-                      Play Store
+                      <Image 
+                        src={'/playstore.png'}
+                        width={200}
+                        height={0}
+                        alt='playstore'
+                        className='object-contain h-fit color: transparent '
+                      />
+                      {/* Play Store */}
                     </Link>
                   )}
                   {project.app_store_link && (
@@ -122,7 +136,14 @@ const galleryImages = project.gallery_urls.split(',');
                       target="_blank"
                       className="flex items-center px-6 py-3 bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
                     >
-                      App Store
+                      <Image 
+                        src={'/appstore.jpg'}
+                        width={200}
+                        height={0}
+                        alt='appstore'
+                        className='object-contain h-fit color: transparent '
+                      />
+                      {/* App Store */}
                     </Link>
                   )}
                 </div>
