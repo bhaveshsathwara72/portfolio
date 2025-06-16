@@ -68,35 +68,35 @@ const aboutData = [
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
           <Image
               src='/Flutter.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
            <Image
               src='/IONIC.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
           <Image
               src='/IOS.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
            <Image
               src='/ReactNative.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
         ],
       },
@@ -113,77 +113,77 @@ const aboutData = [
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />, 
           <Image
               src='/CSS.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,  
           <Image
               src='/GraphQl.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
           <Image
               src='/HTML.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />, 
           <Image
               src='/javascript.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,  
           <Image
               src='/Next.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,  
           <Image
               src='/React.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,  
           <Image
               src='/Svelte.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,  
          <Image
               src='/Tailwind.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,  
         <Image
               src='/TypeScript.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
         <Image
               src='/VueJs.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-[130px] md:w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
           
 
@@ -202,77 +202,77 @@ const aboutData = [
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/Codeignitor.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/Django.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/JAVA.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
         <Image
               src='/Laravel.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/Node.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/PHP.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
           <Image
               src='/Python.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
           <Image
               src='/Ruby-on-Rails.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/Yii.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
         <Image
               src='/Express.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
         ],
       },
@@ -289,28 +289,28 @@ const aboutData = [
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,,
            <Image
               src='/MongoDB.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
            <Image
               src='/MySql.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
            <Image
               src='/PostgreSQl.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
         ],
       },
@@ -324,59 +324,59 @@ const aboutData = [
         icons: [
          <Image
             src='/xd.png'
-            width={100} 
-            height={100}
+            width={50} 
+            height={50}
             alt="Project"
-            className="w-full h-auto rounded-lg"
+            className="w-[50px] md:w-[60px] h-auto rounded-lg"
             />, 
            <Image
               src='/photoshop.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[50px] md:w-[60px] h-auto rounded-lg"
               />,  
            <Image
               src='/illustrator.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[50px] md:w-[60px] h-auto rounded-lg"
               />, 
            <Image
               src='/aftereffects.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[50px] md:w-[60px] h-auto rounded-lg"
               />, 
            <Image
               src='/animate.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[50px] md:w-[60px] h-auto rounded-lg"
               />, 
            <Image
               src='/bridge.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[50px] md:w-[60px] h-auto rounded-lg"
               />, 
            <Image
               src='/acrobat.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[50px] md:w-[60px] h-auto rounded-lg"
               />, 
            <Image
               src='/figma.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[50px] md:w-[60px  ] h-auto rounded-lg"
               />,  
         ],
       },
@@ -390,52 +390,52 @@ const aboutData = [
         icons: [
          <Image
               src='/Django.png'
-              width={50} 
-              height={50}
+              width={30} 
+              height={30}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/Flask.png'
-              width={50} 
-              height={50}
+              width={30} 
+              height={30}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/Pyramid.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/Python.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
         <Image
               src='/Tornado.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/Web2py.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
          <Image
               src='/Zope.png'
               width={50} 
               height={50}
               alt="Project"
-              className="w-full h-auto rounded-lg"
+              className="w-[70px] md:w-full h-auto rounded-lg"
               />,
         ],
       },
@@ -546,6 +546,7 @@ const About = () => {
               return(
                 <div 
                     key={itemIndex} 
+                    
                     className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'}
                       cursor-pointer capitalize xl:text-lg relative after:w-8 
                       after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
@@ -565,7 +566,7 @@ const About = () => {
                 <div>{item.stage}</div>
                 {/* icons */}
                 <div className="gap-x-4">
-                   <div className="conatiner flex w-[600px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+                   <div className="conatiner flex w-[600px] grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5">
                   {item.icons?.map((icon, itemIndex)=>{
                   return(
                     <div key={itemIndex} className="text-2xl text-white p-4">
