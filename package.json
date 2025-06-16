@@ -17,7 +17,6 @@
     "next": "^13.5.11",
     "or": "^0.2.0",
     "react": "18.2.0",
-    "react-axios": "^2.0.6",
     "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
     "react-dot-fragment": "^0.2.10",
