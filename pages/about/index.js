@@ -14,7 +14,7 @@ const Contact = () => {
 
         <div className="container mx-auto h-full flex flex-col justify-center items-center">
           <motion.h2
-            variants={fadeIn('down', 0.2)}
+            variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -24,7 +24,7 @@ const Contact = () => {
           </motion.h2>
 
           <motion.p
-            variants={fadeIn('down', 0.3)}
+            variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -34,7 +34,7 @@ const Contact = () => {
           </motion.p>
 
           <motion.form
-            variants={fadeIn('up', 0.4)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -73,7 +73,7 @@ const Contact = () => {
           </motion.form>
 
           <motion.p
-            variants={fadeIn('up', 0.6)}
+            variants={fadeIn("up", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
