@@ -15,7 +15,7 @@ const ParticlesContainer = () => {
   className='w-full h-full absolute translate-z-0'
   id='tsparticles' 
   init={ParticlesInit} 
-  loaded={particlesLoaded}
+  loaded={particlesLoaded}  
   options={{
     fullScreen: {enable: false},
     background: {

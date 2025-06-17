@@ -13,8 +13,9 @@ const Services = () => {
   return (
     <main>
       <title>Services</title>
-       <ParticlesContainer />
-    <div className=" bg-primary scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative">
+       
+    <div className="scrollbar-hover:scrollbar-thumb-sky-500 scrollbar-active:scrollbar-thumb-sky-400 h-[730px] scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 overflow-y-scroll">
+    <ParticlesContainer />
     <div className="h-full relative py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">

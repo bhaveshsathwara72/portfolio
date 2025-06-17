@@ -19,7 +19,7 @@ console.log("Projects in Work page:", projects);
       <ParticlesContainer />
       <div className="pb-10 max-w-7xl mx-auto">
         <div className="bg-primary py-16 text-center container mx-auto flex flex-col justify-center">
-          <h2 className="h2 mb-8 xl:mb-0">
+          <h2 className="h2 mt-8 mb-5 xl:mb-0">
             My <span className="text-accent">Work.</span>
           </h2>
         </div>
@@ -33,9 +33,9 @@ console.log("Projects in Work page:", projects);
                     width={400}
                     height={500}  
                     alt="Project"
-                    className="w-auto h-auto rounded-lg"
+                    className="w-[480px] md:w-full h-[270px] rounded-lg"
                   />
-                </div>
+                </div>  
                 <div className="p-6">
                   <div className="text-white w-full">
                     <p className="text-sm font-semibold uppercase tracking-wider mb-2">Web Development</p>

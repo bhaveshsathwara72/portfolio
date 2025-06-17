@@ -113,11 +113,10 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <main>
+    <main className='h-full scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative'>
       <title>About</title>
       <ParticlesContainer />
-
-      <div className="py-32 text-center xl:text-left scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative">
+      <div className="py-32 text-center xl:text-left">
         <Circles />
 
         <div className="conatiner h-full relative mx-auto flex flex-col xl:flex-row gap-x-8 xl:text-left">
@@ -200,7 +199,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-10"
+            className="flex flex-col w-full xl:max-w-[48%] h-[250px] mt-10"
           >
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
               {aboutData.map((item, itemIndex) => (
@@ -225,7 +224,7 @@ const About = () => {
                 >
                   {/* icons */}
                   <div className="gap-x-4">
-                    <div className="container flex w-[600px] grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5">
+                    <div className="container flex max-w-lg md:max-w-lg  grid grid-cols-5 gap-2">
                       {item.icons.map((iconSrc, iconIndex) => (
                         <div key={iconIndex} className="text-2xl text-white p-4">
                           <Image
@@ -233,7 +232,7 @@ const About = () => {
                             width={50}
                             height={50}
                             alt="Project Icon"
-                            className="w-[70px] md:w-full h-auto rounded-lg"
+                            className="w-[70px] md:w-[70px] h-auto rounded-lg "
                           />
                         </div>
                       ))}

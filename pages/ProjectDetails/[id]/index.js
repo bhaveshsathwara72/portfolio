@@ -65,7 +65,7 @@ const galleryImages = project.gallery_urls.split(',');
                <Image
                   src={project.image || '/fallback.jpg'} // fallback if image is missing
                   width={400}
-                  height={500}
+                  height={400}
                   alt="Project Image"
                   className="w-full h-full rounded-lg transition-all duration-300"
                 />
@@ -118,7 +118,7 @@ const galleryImages = project.gallery_urls.split(',');
                     <Link
                       href={project.play_store_link}
                       target="_blank"
-                      className="flex items-center px-6 py-3 bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
+                      className="flex items-center bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
                     >
                       <Image 
                         src={'/playstore.png'}
@@ -134,10 +134,10 @@ const galleryImages = project.gallery_urls.split(',');
                     <Link
                       href={project.app_store_link}
                       target="_blank"
-                      className="flex items-center px-6 py-3 bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
+                      className="flex items-center bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
                     >
                       <Image 
-                        src={'/appstore.jpg'}
+                        src={'/asdownload.jpg'}
                         width={200}
                         height={0}
                         alt='appstore'
@@ -214,7 +214,12 @@ const galleryImages = project.gallery_urls.split(',');
               >
                 Gallery
               </motion.h2>
-             <div className="gallery-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+             <motion.div 
+                variants={fadeIn('down', 0.6  )}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className="gallery-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                 {galleryImages.map((src, i) => (
                   <Image
                     key={i}
@@ -225,7 +230,7 @@ const galleryImages = project.gallery_urls.split(',');
                     className="rounded-lg m-2 transition-all duration-300 "
                   />
                 ))}
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
