@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Bulb = () => {
   return (
-    <div className="absolute -left-28 -bottom-0 rotate-6 animate-pulse duration-75 z-10 w-[300px] xl:w-[280px]">
+    <div className="absolute -left-28 -bottom-0 rotate-6 animate-pulse duration-75 z-10 w-[300px] xl:w-[280px] invisible md:visible">
       <Image 
        // src={'/side-1.png'} 
       src={'/bulb-1.png'} 

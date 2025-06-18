@@ -113,11 +113,11 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <main className='h-full scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative'>
+    <main className='h-full w-full scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative'>
       <title>About</title>
+      <Circles />
       <ParticlesContainer />
       <div className="py-32 text-center xl:text-left">
-        <Circles />
 
         <div className="conatiner h-full relative mx-auto flex flex-col xl:flex-row gap-x-8 xl:text-left">
           {/* text section */}

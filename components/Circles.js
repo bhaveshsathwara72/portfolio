@@ -4,8 +4,8 @@ import Image from "next/image";
 const Circles = () => {
   return (
     <div 
-      className="w-[200px] xl: h-[185pxpx] absolute right-5 -bottom-0 -rotate-12 animate-pulse duration-75 z-10 invisible md:visible">
-      <Image src={'/rightside.png'} 
+      className="absolute right-0 -bottom-0 -rotate-0 animate-pulse duration-75 z-10 w-[150px] xl:w-[200px] invisible md:visible">
+      <Image src={'/image5.png'} 
       alt= 'text'
       width={200} 
       height={200} 

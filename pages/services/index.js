@@ -14,16 +14,16 @@ const Services = () => {
     <main>
       <title>Services</title>
        
-    <div className="scrollbar-hover:scrollbar-thumb-sky-500 scrollbar-active:scrollbar-thumb-sky-400 h-[730px] scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 overflow-y-scroll">
+    <div className="relative scrollbar-hover:scrollbar-thumb-sky-500 scrollbar-active:scrollbar-thumb-sky-400 h-[730px] scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 overflow-y-scroll">
     <ParticlesContainer />
-    <div className="h-full relative py-36 flex items-center">
+    <div className="h-full w-full py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
           <div className="text-center flex xl:-w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
-             variants={fadeIn('up', 0.2)} 
+             variants={fadeIn('up', 0.2)}  
              initial='hidden' 
              animate='show' 
              exit='hidden'
