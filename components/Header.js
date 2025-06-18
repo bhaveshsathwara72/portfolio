@@ -15,7 +15,7 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 px-8 ">
           {/* logo */}
           <Link href={'/'}>
-          <div className="md:text-3xl    text-lg">
+          <div className="md:text-3xl text-lg font-bold">
             Bhavesh <span className="text-accent">Sathwara.</span>
           </div>
             {/* <Image src={'/logo.svg'} 

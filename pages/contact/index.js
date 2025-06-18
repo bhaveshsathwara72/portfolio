@@ -17,6 +17,7 @@ import {
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -62,13 +63,55 @@ const btnckick =() =>{
             <div className='text-lg font-bold text-white'>
               Our Social Network:
               <div className='flex-1 flex md:flex-row max-w-max gap-x-2 items-center p-2 m-2 '>
-                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '><RiBehanceLine /></div>
-                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '><RiDribbbleLine /></div>
-                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '><RiFacebookLine /></div>
-                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '><RiInstagramLine /></div>
-                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '><RiPinterestLine /></div>
-                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '>< RiYoutubeLine  /></div>
-              </div>
+                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '>
+                  <Link href={'https://dribbble.com/sathwara-infotech'} 
+                  >
+                    <Image
+                        src={'/dribble.png'}
+                        width={50}
+                        height={50}
+                        alt="Project Icon"
+                        className="w-[28px] md:w-[30px] h-auto rounded-lg hover:bg-accent transition-all duration-300"
+                      />
+                  </Link>
+                </div>
+                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '>
+                  <Link href={'https://www.behance.net/sathwarinfotech'} 
+                  >
+                    <Image
+                        src={'/behance.png'}
+                        width={50}
+                        height={50}
+                        alt="Project Icon"
+                        className="w-[28px] md:w-[30px] h-auto rounded-lg hover:bg-accent transition-all duration-300"
+                      />
+                  </Link>
+                </div>
+                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '>
+                  <Link href={'https://github.com/bhaveshsathwara72'} 
+                  >
+                    <Image
+                        src={'/github.png'}
+                        width={50}
+                        height={50}
+                        alt="Project Icon"
+                        className="w-[28px] md:w-[30px] h-auto rounded-lg hover:bg-accent transition-all duration-300"
+                      />
+                  </Link>
+                </div>
+                <div className='text-white text-2xl p-2 items-center bg-blue rounded-full border border-white hover:bg-accent '>
+                  <Link href={'https://www.linkedin.com/in/bhaveshsathwara/'} 
+                  >
+                    <Image
+                        src={'/linkedin.png'}
+                        width={50}
+                        height={50}
+                        alt="Project Icon"
+                        className="w-[28px] md:w-[30px] h-auto rounded-lg hover:bg-accent transition-all duration-300"
+                      />
+                  </Link>
+                </div>
+                </div>
             </div>
           </div>
         </div>

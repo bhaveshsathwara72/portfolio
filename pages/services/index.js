@@ -16,7 +16,7 @@ const Services = () => {
        
     <div className="relative scrollbar-hover:scrollbar-thumb-sky-500 scrollbar-active:scrollbar-thumb-sky-400 h-[730px] scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 overflow-y-scroll">
     <ParticlesContainer />
-    <div className="h-full w-full py-36 flex items-center">
+    <div className="h-full py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -36,8 +36,7 @@ const Services = () => {
              animate='show' 
              exit='hidden'
             className=" mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis sit amet ligula tempus fringilla. 
-              Nullam gravida pulvinar tristique.
+              I help businesses grow with custom apps, websites, and cloud-backed solutions.
             </motion.p>
           </div>
           {/* slider */}

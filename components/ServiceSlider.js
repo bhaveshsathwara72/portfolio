@@ -8,43 +8,44 @@ import 'swiper/css/pagination';
 
 //icons
 import {
-  RxCrop,
-  RxDesktop,
-  RxPencil2,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight
-} from 'react-icons/rx';
-
+  FaArrowRight,
+  FaDesktop,
+  FaGlobe,
+  FaCloudSunRain,
+  FaChartPie,
+  FaArrowCircleUp,
+  FaUsers
+} from 'react-icons/fa';
+import {RxArrowRight} from 'react-icons/rx';
 //import required modules
 import {FreeMode, Pagination} from 'swiper';
 
 // service data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaDesktop />,
+    title: 'UI/UX Design',
+    description: "Creating modern, intuitive, and responsive interfaces for mobile and web apps to boost user engagement.",
   },
   {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaGlobe />,
+    title: 'Full-Stack Development',
+    description: "Building robust mobile and web apps using Flutter, React, Node.js, and Laravel with scalable architecture.",
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaCloudSunRain /> ,
+    title: 'API & Cloud Integration',
+    description: "Secure REST API development and cloud deployment using Firebase, AWS, and DigitalOcean.",
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaChartPie />,
+    title: 'Internship & Training',
+    description: "Hands-on internship programs with real projects in mobile, web, and cloud technologies.",
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaUsers /> ,
+    title: 'Tech Consulting',
+    description: "Helping startups make the right technology decisions with a strong product foundation.",
   },
 ];
 
@@ -84,7 +85,7 @@ const ServiceSlider = () => {
             </div>
             {/* arrow */}
             <div className="text-3xl">
-              <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
+              <RxArrowRight className="group-hover:-rotate-45 group-hover:text-accent transition-all duration-300" />
             </div>
           </div>
         </SwiperSlide>

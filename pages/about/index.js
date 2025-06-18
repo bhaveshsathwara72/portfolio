@@ -14,7 +14,6 @@ const aboutData = [
         icons: [
           '/Android.png',
           '/Flutter.png',
-          '/IONIC.png',
           '/IOS.png',
           '/ReactNative.png',
         ],
@@ -33,7 +32,6 @@ const aboutData = [
           '/javascript.png',
           '/Next.png',
           '/React.png',
-          '/Svelte.png',
           '/Tailwind.png',
           '/TypeScript.png',
           '/VueJs.png',
@@ -54,7 +52,6 @@ const aboutData = [
           '/Node.png',
           '/PHP.png',
           '/Python.png',
-          '/Ruby-on-Rails.png',
           '/Yii.png',
           '/Express.png',
         ],
@@ -84,8 +81,6 @@ const aboutData = [
           '/illustrator.png',
           '/aftereffects.png',
           '/animate.png',
-          '/bridge.png',
-          '/acrobat.png',
           '/figma.png',
         ],
       },
@@ -100,9 +95,6 @@ const aboutData = [
           '/Flask.png',
           '/Pyramid.png',
           '/Python.png',
-          '/Tornado.png',
-          '/Web2py.png',
-          '/Zope.png',
         ],
       },
     ],
@@ -121,7 +113,7 @@ const About = () => {
 
         <div className="conatiner h-full relative mx-auto flex flex-col xl:flex-row gap-x-8 xl:text-left">
           {/* text section */}
-          <div className="flex-1 flex flex-col justify-center mr-10">
+          <div className="flex-1 flex flex-col justify-center mr-10 md:mt-10">
             <motion.h2
               variants={fadeIn('right', 0.2)}
               initial="hidden"
@@ -152,39 +144,30 @@ const About = () => {
             >
               <div className="flex flex-1 xl:gap-x-6 ml-10 px-5">
                 {/* experience */}
-                <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="relative flex-1 after:w-[2px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                   <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                    <CountUp start={0} end={10} duration={5} />+
+                    <CountUp start={0} end={8} duration={5} />+
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                     Years Of experience
                   </div>
                 </div>
                 {/* clients */}
-                <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="relative flex-1 after:w-[2px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                   <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                    <CountUp start={0} end={250} duration={5} />+
+                    <CountUp start={0} end={100} duration={5} />+
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                     Satisfied clients
                   </div>
                 </div>
                 {/* projects */}
-                <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="relative flex-1  after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                   <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                    <CountUp start={0} end={650} duration={5} />+
+                    <CountUp start={0} end={150} duration={5} />+
                   </div>
                   <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                     Finished Projects
-                  </div>
-                </div>
-                {/* awards */}
-                <div className="relative flex-1">
-                  <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                    <CountUp start={0} end={8} duration={5} />+
-                  </div>
-                  <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                    Winning awards
                   </div>
                 </div>
               </div>
