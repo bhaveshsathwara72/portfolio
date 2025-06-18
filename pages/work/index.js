@@ -31,7 +31,7 @@ console.log("Projects in Work page:", projects);
                   <Image
                    src={item.image || '/fallback.jpg'} // fallback if image is missing
                     width={400}
-                    height={500}  
+                    height={500}    
                     alt="Project"
                     className="w-[480px] md:w-full h-[270px] rounded-lg"
                   />

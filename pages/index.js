@@ -45,8 +45,7 @@ const Home = () => {
           animate='show' 
           exit='hidden'
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            laboris nisi ut aliquip ex ea commodo consequat.   
+            I’m Bhavesh Sathwara, the founder of Sathwara InfoTech. I specialize in creating full-stack solutions across mobile apps, web platforms, and backend services. With over 8 years of experience, I’ve led and built 100+ projects for clients across eCommerce, fintech, healthcare, and on-demand domains. I believe in clean architecture, rapid development, and reliable scaling.  
           </motion.p>
           {/* button */}
           <div className='flex justify-center xl:hidden relative'>

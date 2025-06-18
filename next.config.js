@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['static.vecteezy.com'], // Allowed external image domain
+    domains: ['sathwarainfotech.com'], // Allowed external image domain
+    
   },
 }
 
