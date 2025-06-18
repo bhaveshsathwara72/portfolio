@@ -42,6 +42,7 @@ const serviceData = [
     title: 'Internship & Training',
     description: "Hands-on internship programs with real projects in mobile, web, and cloud technologies.",
   },
+  
   {
     icon: <FaUsers /> ,
     title: 'Tech Consulting',
