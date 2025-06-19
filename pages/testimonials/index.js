@@ -12,7 +12,7 @@ const Testimonials = () => {
   return (
     <main>
     <title>Testimonials</title>
-   <div className="h-full bg-primary py-32 text-center scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative ">
+   <div className="h-full w-full bg-primary py-32 text-center scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative ">
     <ParticlesContainer/>
     <div className="container mx-auto h-full flex flex-col justify-center"> 
       {/* title */}
