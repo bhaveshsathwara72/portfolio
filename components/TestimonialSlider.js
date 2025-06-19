@@ -1,25 +1,22 @@
 // testimonial data
 const testimonialData = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    name: 'Ravinder Kumar ',
+    position: 'Manager, TGT',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      "They truly understood our requirements and went the extra mile to deliver a polished, user-friendly app.",
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
+    name: 'Dr. Sakile Camara',
+    position: 'Owner, Midwest Social Science Research Associates',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+     "Their genuine investment in building a long-lasting relationship with us, not just completing a project, impressed us.",
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    name: 'Alex Florentin',
+    position: 'Director, black mesa',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+     "They showcased very good work and communication."
   },
 ];
 
@@ -58,15 +55,11 @@ const TestimonialSlider = () => {
     testimonialData.map((person, index) => {
       return(
         <SwiperSlide key={index}>
-          <div className="flex flex-col items-center md:flex-row gap-x-5 h-full px-8">
+          <div className="w-full flex flex-col items-center md:flex-row gap-x-5 h-full px-8">
             {/* avatar, name, position */}
             <div className="w-full max-w-[360px] flex flex-col xl:justify-center 
                items-center relative mx-auto xl:mx-0">
               <div className="flex flex-col justify-center text-center">
-                {/* avatar */}
-                <div className="mb-2 mx-auto ">
-                  <Image src={person.image} width={100} height={100} alt="text" />
-                </div>
                 {/* name */}
                 <div className="text-lg">{person.name}</div>
                 {/* position */}
