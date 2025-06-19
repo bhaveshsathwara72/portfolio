@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
+
 // Icons
 import {
   FaDesktop,
@@ -51,19 +52,13 @@ const serviceData = [
 const ServiceSlider = () => {
   return (
     <Swiper
-      breakpoints={{
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-      }}
-      freeMode={true} // ✅ fixed casing
-      pagination={{ clickable: true }}
-      modules={[FreeMode, Pagination]}
+        slidesPerView={3}
+        spaceBetween={30}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
       className="h-[240px] sm:h-[340px]"
     >
       {serviceData.map((item, index) => (
