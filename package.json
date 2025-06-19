@@ -22,7 +22,7 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^7.6.2",
     "react-tsparticles": "^2.9.3",
-    "swiper": "^9.4.0",
+    "swiper": "^11.2.8",
     "tailwind-scrollbar": "^3.1.0",
     "tsparticles": "^2.9.3",
     "yarn": "^1.22.22"

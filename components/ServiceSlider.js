@@ -1,26 +1,25 @@
-//import swiper react components
-import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-//import swiper styles
+// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-//icons
+// Icons
 import {
-  FaArrowRight,
   FaDesktop,
   FaGlobe,
   FaCloudSunRain,
   FaChartPie,
-  FaArrowCircleUp,
   FaUsers
 } from 'react-icons/fa';
-import {RxArrowRight} from 'react-icons/rx';
-//import required modules
-import {FreeMode, Pagination} from 'swiper';
+import { RxArrowRight } from 'react-icons/rx';
 
-// service data
+// Import required Swiper modules (for Swiper v11+)
+import { FreeMode, Pagination } from 'swiper/modules';
+
+// Service data
 const serviceData = [
   {
     icon: <FaDesktop />,
@@ -33,7 +32,7 @@ const serviceData = [
     description: "Building robust mobile and web apps using Flutter, React, Node.js, and Laravel with scalable architecture.",
   },
   {
-    icon: <FaCloudSunRain /> ,
+    icon: <FaCloudSunRain />,
     title: 'API & Cloud Integration',
     description: "Secure REST API development and cloud deployment using Firebase, AWS, and DigitalOcean.",
   },
@@ -42,43 +41,34 @@ const serviceData = [
     title: 'Internship & Training',
     description: "Hands-on internship programs with real projects in mobile, web, and cloud technologies.",
   },
-  
   {
-    icon: <FaUsers /> ,
+    icon: <FaUsers />,
     title: 'Tech Consulting',
     description: "Helping startups make the right technology decisions with a strong product foundation.",
   },
 ];
 
 const ServiceSlider = () => {
-  return( 
-  <Swiper breakpoints={{
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 15,
-    },
-   480: {
-      slidesPerView:2,
-      spaceBetween:15,
-   },
-   640: {
-      slidesPerView: 3,
-      spaceBetween: 15,
-    },
-  }}
-  FreeMode={true}
-  pagination={{
-    clickable: true,
-  }}
-  modules={[FreeMode, Pagination]}
-  className="h-[240px] sm:h-[340px]"
-  >
-  {
-    serviceData.map((item, index) => {
-      return(
+  return (
+    <Swiper
+      breakpoints={{
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+      }}
+      freeMode={true} // ✅ fixed casing
+      pagination={{ clickable: true }}
+      modules={[FreeMode, Pagination]}
+      className="h-[240px] sm:h-[340px]"
+    >
+      {serviceData.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 shadow-none md:shadow-lg 
-              sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
+          <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 shadow-none md:shadow-lg sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
             {/* icon */}
             <div className="text-4xl text-accent mb-4">{item.icon}</div>
             {/* title & desc */}
@@ -92,9 +82,8 @@ const ServiceSlider = () => {
             </div>
           </div>
         </SwiperSlide>
-      );
-    })};
-  </Swiper>
+      ))}
+    </Swiper>
   );
 };
 

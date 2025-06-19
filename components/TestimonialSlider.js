@@ -22,7 +22,7 @@ const testimonialData = [
 
 
 //import swiper react components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 //import swiper styles
 import 'swiper/css';
@@ -30,11 +30,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 //import required modules
-import {Pagination} from 'swiper';
-import {Navigation} from "swiper";
+import { Navigation, Pagination } from 'swiper/modules';
 
 // icons
 import {FaQuoteLeft} from 'react-icons/fa';
+
+//next image
+import Image from "next/image";
 
 
 
