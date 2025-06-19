@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <main>
       <title>Services</title>
-       
+    
     <div className="relative scrollbar-hover:scrollbar-thumb-sky-500 scrollbar-active:scrollbar-thumb-sky-400 h-[730px] scrollbar scrollbar-thumb-slate-700 scrollbar-track-slate-300 overflow-y-scroll">
     <ParticlesContainer />
     <div className="h-full py-36 flex items-center">
@@ -56,5 +56,6 @@ const Services = () => {
   </main>
   );
 };
+
 
 export default Services;

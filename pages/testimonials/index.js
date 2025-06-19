@@ -31,6 +31,7 @@ const Testimonials = () => {
       animate='show' 
       exit='hidden'
       >
+        
         <TestimonialSlider />
       </motion.div>
     </div>
