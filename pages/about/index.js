@@ -12,10 +12,10 @@ const aboutData = [
     info: [
       {
         icons: [
-          '/Android.png',
-          '/Flutter.png',
-          '/IOS.png',
-          '/ReactNative.png',
+          '/m1.png',
+          '/m2.png',
+          '/m3.png',
+          '/m4.png',
         ],
       },
     ],
@@ -25,16 +25,16 @@ const aboutData = [
     info: [
       {
         icons: [
-          '/Angular.png',
-          '/CSS.png',
-          '/GraphQl.png',
-          '/HTML.png',
-          '/javascript.png',
-          '/Next.png',
-          '/React.png',
-          '/Tailwind.png',
-          '/TypeScript.png',
-          '/VueJs.png',
+          '/f1.png',
+          '/f2.png',
+          '/f3.png',
+          '/f4.png',
+          '/f5.png',
+          '/f6.png',
+          '/f7.png',
+          '/f8.png',
+          '/f9.png',
+          '/f10.png',
         ],
       },
     ],
@@ -44,16 +44,16 @@ const aboutData = [
     info: [
       {
         icons: [
-          '/ASP.png',
-          '/Codeignitor.png',
-          '/Django.png',
-          '/JAVA.png',
-          '/Laravel.png',
-          '/Node.png',
-          '/PHP.png',
-          '/Python.png',
-          '/Yii.png',
-          '/Express.png',
+          '/b1.png',
+          '/b2.png',
+          '/b3.png',
+          '/b4.png',
+          '/b5.png',
+          '/b6.png',
+          '/b7.png',
+          '/b8.png',
+          '/b9.png',
+          '/b10.png',
         ],
       },
     ],
@@ -63,10 +63,10 @@ const aboutData = [
     info: [
       {
         icons: [
-          '/Firebase.png',
-          '/MongoDB.png',
-          '/MySql.png',
-          '/PostgreSQl.png',
+          '/db1.png',
+          '/db2.png',
+          '/db3.png',
+          '/db4.png',
         ],
       },
     ],
@@ -76,12 +76,12 @@ const aboutData = [
     info: [
       {
         icons: [
-          '/xd.png',
-          '/photoshop.png',
-          '/illustrator.png',
-          '/aftereffects.png',
-          '/animate.png',
-          '/figma.png',
+          '/d1.png',
+          '/d2.png',
+          '/d3.png',
+          '/d4.png',
+          '/d5.png',
+          '/d6.png',
         ],
       },
     ],
@@ -91,10 +91,10 @@ const aboutData = [
     info: [
       {
         icons: [
-          '/Django.png',
-          '/Flask.png',
-          '/Pyramid.png',
-          '/Python.png',
+          '/AI1.png',
+          '/AI2.png',
+          '/AI3.png',
+          '/AI4.png',
         ],
       },
     ],
