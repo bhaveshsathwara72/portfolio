@@ -2,6 +2,7 @@
 import TestimonialSlider from "../../components/TestimonialSlider";
 
 
+
 // framer motion 
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
@@ -10,10 +11,11 @@ import ParticlesContainer from "../../components/ParticlesContainer";
 const Testimonials = () => {
   return (
     <main>
+
     <title>Testimonials</title>
-   <div className="h-full w-full bg-primary py-32 text-center scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative ">
-    <ParticlesContainer/>
-    <div className="container mx-auto h-full flex flex-col justify-center"> 
+    <div>          <ParticlesContainer/>
+   <div className="h-full py-32 text-center scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-slate-800 scrollbar-track-slate-300 h-[730px] overflow-y-scroll relative ">
+    <div className="container mx-auto flex flex-col justify-center"> 
       {/* title */}
       <motion.h2
        variants={fadeIn('up', 0.2)} 
@@ -30,11 +32,12 @@ const Testimonials = () => {
       animate='show' 
       exit='hidden'
       >
-        
         <TestimonialSlider />
       </motion.div>
     </div>
    </div>
+   </div>
+
   </main>
   );
 };

@@ -59,6 +59,10 @@ const ServiceSlider = () => {
       slidesPerView: 1,
       spaceBetween: 15,
     },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
    640: {
       slidesPerView: 3,
       spaceBetween: 15,
