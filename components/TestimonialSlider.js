@@ -55,9 +55,9 @@ const TestimonialSlider = () => {
     testimonialData.map((person, index) => {
       return(
         <SwiperSlide key={index}>
-          <div className="w-full flex flex-col items-center md:flex-row gap-x-5 h-full px-8">
+          <div className="flex flex-col items-center md:flex-row gap-x-5 h-full px-8">
             {/* avatar, name, position */}
-            <div className="w-full max-w-[360px] flex flex-col xl:justify-center 
+            <div className="w-full max-w-[350px] flex flex-col xl:justify-center 
                items-center relative mx-auto xl:mx-0">
               <div className="flex flex-col justify-center text-center">
                 {/* name */}
