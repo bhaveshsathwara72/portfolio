@@ -1,18 +1,47 @@
+"use client";
+
 import { useRouter } from 'next/router';
-import { useContext } from 'react';
-import AppContext from '../../../context/AppContext'; // adjust path if needed
+import { useContext, useEffect, useState } from 'react';
+import AppContext from '../../../context/AppContext';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowLeft, FaCheck } from 'react-icons/fa';
 import ParticlesContainer from '../../../components/ParticlesContainer';
-import { fadeIn } from '../../../variants'; // assuming you have this animation variant
+import { fadeIn } from '../../../variants';
 
 export default function Works() {
   const router = useRouter();
   const { id } = router.query;
   const { projects } = useContext(AppContext);
- // Handle loading state
+  const [galleryImages, setGalleryImages] = useState([]);
+
+  useEffect(() => {
+    if (!id || !projects || projects.length === 0) return;
+
+    const project = projects.find((p) => String(p.id) === id);
+    if (!project || !project.gallery_urls) return;
+
+    try {
+      let images = [];
+
+      if (Array.isArray(project.gallery_urls)) {
+        images = project.gallery_urls;
+      } else if (typeof project.gallery_urls === 'string') {
+        if (project.gallery_urls.trim().startsWith('[')) {
+          images = JSON.parse(project.gallery_urls);
+        } else {
+          images = project.gallery_urls.split(',');
+        }
+      }
+
+      setGalleryImages(images);
+    } catch (error) {
+      console.error('Invalid gallery_urls format:', error);
+      setGalleryImages([]);
+    }
+  }, [id, projects]);
+
   if (!projects || projects.length === 0) {
     return <p className="text-white text-center mt-10">Loading projects...</p>;
   }
@@ -21,13 +50,11 @@ export default function Works() {
     return <p className="text-white text-center mt-10">Loading project details...</p>;
   }
 
-  // Find project by id (string comparison is good)
   const project = projects.find((p) => String(p.id) === id);
 
   if (!project) {
     return <p className="text-white text-center mt-10">Project not found.</p>;
   }
-const galleryImages = project.gallery_urls.split(',');
 
   return (
     <section>
@@ -40,7 +67,6 @@ const galleryImages = project.gallery_urls.split(',');
               className="mt-10 flex items-center px-6 py-3 bg-primary hover:bg-accent transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit">
               <FaArrowLeft className="mr-2" /> Go Back
             </button>
-    
 
             <motion.h1
               variants={fadeIn('down', 0.2)}
@@ -51,10 +77,8 @@ const galleryImages = project.gallery_urls.split(',');
             >
               <span className="text-accent">{project.title}</span>
             </motion.h1>
-            
 
             <div className="flex flex-col lg:flex-row gap-6">
-              {/* Main Image */}
               <motion.div
                 variants={fadeIn('right', 0.2)}
                 initial="hidden"
@@ -62,8 +86,8 @@ const galleryImages = project.gallery_urls.split(',');
                 exit="hidden"
                 className="flex-1"
               >
-               <Image
-                  src={project.image || '/fallback.jpg'} // fallback if image is missing
+                <Image
+                  src={project.image || '/fallback.jpg'}
                   width={400}
                   height={400}
                   alt="Project Image"
@@ -71,7 +95,6 @@ const galleryImages = project.gallery_urls.split(',');
                 />
               </motion.div>
 
-              {/* Technologies + Buttons */}
               <motion.div
                 variants={fadeIn('left', 0.4)}
                 initial="hidden"
@@ -80,18 +103,22 @@ const galleryImages = project.gallery_urls.split(',');
                 className="flex-1 space-y-4"
               >
                 <div className="bg-primary h-[245px] p-8 rounded-2xl shadow-lg border-gray-700 border hover:bg-primary/600 transition-all duration-300">
-                  <h3 class="text-2xl font-bold mb-4 text-white">Technologies Used</h3>
-                  <div class="space-y-4">
+                  <h3 className="text-2xl font-bold mb-4 text-white">Technologies Used</h3>
+                  <div className="space-y-4">
                     <div>
-                      <h4 class="text-lg font-semibold mb-2 text-gray-200">Frontend</h4>
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-900/30 text-blue-200 rounded-full text-sm border border-blue-800/50"> {project.frontend_technologies}</span>
+                      <h4 className="text-lg font-semibold mb-2 text-gray-200">Frontend</h4>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="px-3 py-1 bg-blue-900/30 text-blue-200 rounded-full text-sm border border-blue-800/50">
+                          {project.frontend_technologies}
+                        </span>
                       </div>
                     </div>
                     <div>
-                      <h4 class="text-lg font-semibold mb-2 text-gray-200">Backend</h4>
-                      <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-900/30 text-blue-200 rounded-full text-sm border border-blue-800/50">{project.backend_technologies}</span>
+                      <h4 className="text-lg font-semibold mb-2 text-gray-200">Backend</h4>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="px-3 py-1 bg-blue-900/30 text-blue-200 rounded-full text-sm border border-blue-800/50">
+                          {project.backend_technologies}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -105,13 +132,13 @@ const galleryImages = project.gallery_urls.split(',');
                       className="flex items-center px-6 py-3 bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
                     >
                       <Image
-                        src={'/globe.svg'} // fallback if image is missing
+                        src="/globe.svg"
                         width={30}
                         height={30}
-                        alt="visite"
+                        alt="visit"
                         className="mr-3 brightness-0 invert h-fit color: transparent"
                       />
-                      <span className='font-semibold text-lg'> Visit Website </span>
+                      <span className="font-semibold text-lg"> Visit Website </span>
                     </Link>
                   )}
                   {project.play_store_link && (
@@ -120,14 +147,13 @@ const galleryImages = project.gallery_urls.split(',');
                       target="_blank"
                       className="flex items-center bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
                     >
-                      <Image 
-                        src={'/playstore.png'}
+                      <Image
+                        src="/playstore.png"
                         width={200}
                         height={0}
-                        alt='playstore'
-                        className='object-contain h-fit color: transparent '
+                        alt="playstore"
+                        className="object-contain h-fit color: transparent"
                       />
-                      {/* Play Store */}
                     </Link>
                   )}
                   {project.app_store_link && (
@@ -136,21 +162,19 @@ const galleryImages = project.gallery_urls.split(',');
                       target="_blank"
                       className="flex items-center bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
                     >
-                      <Image 
-                        src={'/asdownload.jpg'}
+                      <Image
+                        src="/asdownload.jpg"
                         width={200}
                         height={0}
-                        alt='appstore'
-                        className='object-contain h-fit color: transparent '
+                        alt="appstore"
+                        className="object-contain h-fit color: transparent"
                       />
-                      {/* App Store */}
                     </Link>
                   )}
                 </div>
               </motion.div>
             </div>
 
-            {/* Overview */}
             <div>
               <motion.h2
                 variants={fadeIn('down', 0.2)}
@@ -164,7 +188,6 @@ const galleryImages = project.gallery_urls.split(',');
               <p className="text-gray-400 text-sm">{project.long_description}</p>
             </div>
 
-            {/* Key Features */}
             <div>
               <motion.h2
                 variants={fadeIn('down', 0.2)}
@@ -180,7 +203,6 @@ const galleryImages = project.gallery_urls.split(',');
               </p>
             </div>
 
-            {/* Project Journey */}
             <div>
               <motion.h2
                 variants={fadeIn('down', 0.2)}
@@ -214,23 +236,29 @@ const galleryImages = project.gallery_urls.split(',');
               >
                 Gallery
               </motion.h2>
-             <motion.div 
-                variants={fadeIn('down', 0.6  )}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
-                className="gallery-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-                {galleryImages.map((src, i) => (
-                  <Image
-                    key={i}
-                    src={src.trim()}
-                    width={300}
-                    height={500}
-                    alt={`Gallery Image ${i + 1}`}
-                    className="rounded-lg m-2 transition-all duration-300 "
-                  />
-                ))}
-              </motion.div>
+
+              {galleryImages.length === 0 ? (
+                <p className="text-gray-400 text-sm">No gallery images available.</p>
+              ) : (
+                <motion.div
+                  variants={fadeIn('down', 0.6)}
+                  initial="hidden"
+                  animate="show"
+                  exit="hidden"
+                  className="gallery-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2"
+                >
+                  {galleryImages.map((src, i) => (
+                    <Image
+                      key={i}
+                      src={src.trim()}
+                      width={300}
+                      height={500}
+                      alt={`Gallery Image ${i + 1}`}
+                      className="rounded-lg m-2 transition-all duration-300"
+                    />
+                  ))}
+                </motion.div>
+              )}
             </div>
           </div>
         </div>
