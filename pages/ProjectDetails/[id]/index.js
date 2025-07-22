@@ -91,7 +91,7 @@ export default function Works() {
                   width={400}
                   height={400}
                   alt="Project Image"
-                  className="w-full h-full rounded-lg transition-all duration-300"
+                  className="w-[800px] h-[300px] rounded-lg transition-all duration-300"
                 />
               </motion.div>
 
@@ -102,7 +102,7 @@ export default function Works() {
                 exit="hidden"
                 className="flex-1 space-y-4"
               >
-                <div className="bg-primary h-[245px] p-8 rounded-2xl shadow-lg border-gray-700 border hover:bg-primary/600 transition-all duration-300">
+                <div className="bg-primary h-[230px] p-4 pl-6 rounded-2xl shadow-lg border-gray-700 border hover:bg-primary/600 transition-all duration-300">
                   <h3 className="text-2xl font-bold mb-4 text-white">Technologies Used</h3>
                   <div className="space-y-4">
                     <div>
@@ -124,21 +124,21 @@ export default function Works() {
                   </div>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 grid grid-cols-1 md:grid-cols-3 gap-4">
                   {project.web_link && (
                     <Link
                       href={project.web_link}
                       target="_blank"
-                      className="flex items-center px-6 py-3 bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
+                      className="flex items-center px-2 py-2 bg-black/30 hover:bg-primary transition-all duration-300 rounded-xl border border-gray-100/20 text-white hover:scale-105 transform hover:shadow-lg w-fit"
                     >
                       <Image
                         src="/globe.svg"
-                        width={30}
-                        height={30}
+                        width={20}
+                        height={20}
                         alt="visit"
-                        className="mr-3 brightness-0 invert h-fit color: transparent"
+                        className="mr-2 brightness-0 invert h-fit color: transparent"
                       />
-                      <span className="font-semibold text-lg"> Visit Website </span>
+                      <span className="font-semibold text-sm"> Visit Website </span>
                     </Link>
                   )}
                   {project.play_store_link && (

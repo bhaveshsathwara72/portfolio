@@ -33,7 +33,7 @@ console.log("Projects in Work page:", projects);
                     width={400}
                     height={500}    
                     alt="Project"
-                    className="w-[480px] md:w-full h-[270px] rounded-lg"
+                    className="w-[480px] md:w-full h-[270px] rounded-lg transition-all duration-900"
                   />
                 </div>  
                 <div className="p-6">
